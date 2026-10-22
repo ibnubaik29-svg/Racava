@@ -585,9 +585,10 @@ input, textarea { font-family: inherit; }
     <div class="nav-inner">
       <a class="brand" href="#" aria-label="Racava">
         <img
-          src="https://raw.githubusercontent.com/ibnubaik29-svg/Racava-Remote/main/1792661081009.png"
+          src="https://cdn.jsdelivr.net/gh/ibnubaik29-svg/Racava-Remote@main/1792661081009.png"
           alt="Racava"
           id="brandLogo"
+          referrerpolicy="no-referrer"
           onerror="this.onerror=null; this.src='https://files.catbox.moe/racava-logo.png';"
         />
       </a>
@@ -626,10 +627,11 @@ input, textarea { font-family: inherit; }
       <div class="hero-glow"></div>
       <div class="hero-title-lockup">
         <img
-          src="https://raw.githubusercontent.com/ibnubaik29-svg/Racava-Remote/main/1792661081009.png"
+          src="https://cdn.jsdelivr.net/gh/ibnubaik29-svg/Racava-Remote@main/1792661081009.png"
           alt="Racava"
           class="hero-logo"
           id="heroLogo"
+          referrerpolicy="no-referrer"
           onerror="this.onerror=null; this.src='https://files.catbox.moe/racava-logo.png';"
         />
       </div>
@@ -718,9 +720,10 @@ input, textarea { font-family: inherit; }
   <footer class="footer">
     <div class="footer-brand">
       <img
-        src="https://raw.githubusercontent.com/ibnubaik29-svg/Racava-Remote/main/1792661081009.png"
+        src="https://cdn.jsdelivr.net/gh/ibnubaik29-svg/Racava-Remote@main/1792661081009.png"
         alt="Racava"
         id="footerLogo"
+        referrerpolicy="no-referrer"
         onerror="this.onerror=null; this.src='https://files.catbox.moe/racava-logo.png';"
       />
     </div>
@@ -769,7 +772,7 @@ input, textarea { font-family: inherit; }
         </div>
 
         <div class="qris-block">
-          <img id="qrisImage" src="https://files.catbox.moe/racava-qris.png" alt="QRIS" />
+          <img id="qrisImage" src="https://files.catbox.moe/t14776.jpg" alt="QRIS" referrerpolicy="no-referrer" />
           <p data-i18n="sheet.scan">Scan QRIS untuk melakukan pembayaran</p>
         </div>
         <div class="upload-block" id="uploadBlock">
@@ -844,13 +847,13 @@ input, textarea { font-family: inherit; }
 
 const CONFIG_SOURCES = [
   './app_config.json',
-  'https://raw.githubusercontent.com/ibnubaik29-svg/Racava-Remote/main/app_config.json'
+  'https://cdn.jsdelivr.net/gh/ibnubaik29-svg/Racava-Remote@main/app_config.json'
 ];
 
 const DEFAULT_CONFIG = {
   domain: 'https://your-server.com',
-  /* Logo diambil dari GitHub (raw). Fallback otomatis ke catbox jika gagal. */
-  logo: 'https://raw.githubusercontent.com/ibnubaik29-svg/Racava-Remote/main/1792661081009.png',
+  /* Logo diambil dari jsDelivr CDN (stabil). Fallback otomatis ke catbox jika gagal. */
+  logo: 'https://cdn.jsdelivr.net/gh/ibnubaik29-svg/Racava-Remote@main/1792661081009.png',
   qris_image: 'https://files.catbox.moe/t14776.jpg',
   email: 'racava.help@gmail.com',
   telegram: 'https://t.me/RacavaOfficial',
@@ -1151,7 +1154,7 @@ function renderModules() {
         </summary>
         <div class="accordion-body">
           <div class="feature-img-wrap">
-            <img src="${imgUrl}" alt="${title}" onerror="this.style.display='none'" />
+            <img src="${imgUrl}" alt="${title}" referrerpolicy="no-referrer" onerror="this.style.display='none'" />
           </div>
           <p class="feature-desc">${desc}</p>
         </div>
@@ -1196,7 +1199,7 @@ function renderBonus() {
     return `
       <div class="bonus-item">
         <div class="bonus-img">
-          <img src="${imgUrl}" alt="${t(i.label)}" onerror="this.style.display='none'" />
+          <img src="${imgUrl}" alt="${t(i.label)}" referrerpolicy="no-referrer" onerror="this.style.display='none'" />
         </div>
         <div class="bonus-label">
           <i data-lucide="${i.icon}"></i>
